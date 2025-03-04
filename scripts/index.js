@@ -119,7 +119,7 @@ function createStars(numStars) {
 }
 
 // Create 200 stars when page loads
-window.addEventListener('load', () => createStars(200));
+// window.addEventListener('load', () => createStars(200));
 
 // End Added
 //
@@ -201,6 +201,7 @@ const selectRandomGame = () => {
 const init = () => {
   // createStars();
   createGameCards();
+  window.addEventListener('load', () => createStars(200));
 
   // Event listeners
   document.getElementById('random-game').addEventListener('click', selectRandomGame);
