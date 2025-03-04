@@ -65,33 +65,65 @@ const games = [{
 ];
 
 // Generate stars for background
-const createStars = () => {
-  const starsContainer = document.getElementById('stars');
-  const numberOfStars = 200;
+// const createStars = () => {
+//   const starsContainer = document.getElementById('stars');
+//   const numberOfStars = 200;
 
-  for (let i = 0; i < numberOfStars; i++) {
+//   for (let i = 0; i < numberOfStars; i++) {
+//     const star = document.createElement('div');
+//     star.className = 'star';
+
+//     // Random position
+//     const left = Math.random() * 100;
+//     const top = Math.random() * 100;
+
+//     // Random size
+//     const size = Math.random() * 3;
+
+//     // Random animation delay
+//     const delay = Math.random() * 5;
+
+//     star.style.left = `${left}%`;
+//     star.style.top = `${top}%`;
+//     star.style.width = `${size}px`;
+//     star.style.height = `${size}px`;
+//     star.style.animationDelay = `${delay}s`;
+
+//     starsContainer.appendChild(star);
+//   }
+// };
+
+// ADDED
+//
+function createStars(numStars) {
+  const body = document.body;
+
+  for (let i = 0; i < numStars; i++) {
     const star = document.createElement('div');
-    star.className = 'star';
+    star.classList.add('star');
 
-    // Random position
-    const left = Math.random() * 100;
-    const top = Math.random() * 100;
+    // Random positioning
+    star.style.left = `${Math.random() * 100}%`;
+    star.style.top = `${Math.random() * 100}%`;
 
-    // Random size
-    const size = Math.random() * 3;
-
-    // Random animation delay
-    const delay = Math.random() * 5;
-
-    star.style.left = `${left}%`;
-    star.style.top = `${top}%`;
+    // Random size between 1-3 pixels
+    const size = Math.random() * 2 + 1;
     star.style.width = `${size}px`;
     star.style.height = `${size}px`;
-    star.style.animationDelay = `${delay}s`;
 
-    starsContainer.appendChild(star);
+    // Random twinkle delay and duration
+    star.style.animation = `twinkle ${Math.random() * 3 + 2}s ${Math.random() * 3}s infinite`;
+
+    body.appendChild(star);
   }
-};
+}
+
+// Create 200 stars when page loads
+window.addEventListener('load', () => createStars(200));
+
+// End Added
+//
+
 
 // Create game cards
 const createGameCards = () => {
@@ -167,7 +199,7 @@ const selectRandomGame = () => {
 
 // Initialize app
 const init = () => {
-  createStars();
+  // createStars();
   createGameCards();
 
   // Event listeners
