@@ -10,49 +10,57 @@ const games = [{
     id: 2,
     title: "Space Invaders",
     description: "Defend Earth from alien invaders in this classic arcade game.",
-    icon: "👾"
+    icon: "👾",
+    url: "games/space-invaders.html"
   },
   {
     id: 3,
     title: "Galactic Racer",
     description: "Race through the cosmos at light speed, avoiding obstacles.",
-    icon: "🚀"
+    icon: "🚀",
+    url: "games/galactic-racer.html"
   },
   {
     id: 4,
     title: "Alien Puzzle",
     description: "Solve puzzles to communicate with extraterrestrial beings.",
-    icon: "👽"
+    icon: "👽",
+    url: "games/alien-puzzle.html"
   },
   {
     id: 5,
     title: "Cosmic Defender",
     description: "Protect your space station from waves of enemy attacks.",
-    icon: "🛸"
+    icon: "🛸",
+    url: "games/cosmic defender.html"
   },
   {
     id: 6,
     title: "Planet Jumper",
     description: "Jump from planet to planet collecting cosmic energy.",
-    icon: "🪐"
+    icon: "🪐",
+    url: "games/planet-jumper.html"
   },
   {
     id: 7,
     title: "Starship Builder",
     description: "Design and test your own starship in interstellar challenges.",
-    icon: "🌌"
+    icon: "🌌",
+    url: "games/starship-builder.html"
   },
   {
     id: 8,
     title: "Meteor Shower",
     description: "Dodge falling meteors as you collect valuable space minerals.",
-    icon: "☄️"
+    icon: "☄️",
+    url: "games/meteor-shower.html"
   },
   {
     id: 9,
     title: "Nebula Match",
     description: "Match colorful nebula patterns to create powerful supernovas.",
-    icon: "🌈"
+    icon: "🌈",
+    url: "games/nebula-match.html"
   }
 ];
 
