@@ -2,7 +2,7 @@
 const games = [{
     id: 1,
     title: "Rock Paper Scissors",
-    description: "Defend Earth from alien invaders in this classic arcade game.",
+    description: "Rock beats scissors, scissors beats paper, and paper beats rock. Shoot! ",
     icon: "👊✋✌️",
     url: "games/rock-paper-scissors/rock-paper-scissors.html"
   },
