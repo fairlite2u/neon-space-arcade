@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Dark space background with slight gradient -->
+  <rect width="100" height="100" fill="#000B20"/>
+  
+  <!-- Background stars -->
+  <g id="background-stars">
+    <circle cx="15" cy="20" r="0.5" fill="white" opacity="0.6"/>
+    <circle cx="30" cy="15" r="0.3" fill="white" opacity="0.8"/>
+    <circle cx="50" cy="10" r="0.4" fill="white" opacity="0.7"/>
+    <circle cx="70" cy="25" r="0.3" fill="white" opacity="0.5"/>
+    <circle cx="85" cy="15" r="0.5" fill="white" opacity="0.6"/>
+    <circle cx="25" cy="60" r="0.4" fill="white" opacity="0.7"/>
+    <circle cx="75" cy="75" r="0.6" fill="white" opacity="0.8"/>
+    <circle cx="10" cy="80" r="0.3" fill="white" opacity="0.6"/>
+    <circle cx="90" cy="60" r="0.5" fill="white" opacity="0.7"/>
+    <circle cx="40" cy="85" r="0.4" fill="white" opacity="0.5"/>
+  </g>
+  
+  <!-- Filters for nebula effects -->
+  <defs>
+    <radialGradient id="nebulaGradient" cx="50%" cy="50%" r="70%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#7B42F6" stop-opacity="0.9"/>
+      <stop offset="40%" stop-color="#E056FD" stop-opacity="0.7"/>
+      <stop offset="70%" stop-color="#26C6DA" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#3B89FF" stop-opacity="0.2"/>
+    </radialGradient>
+    
+    <filter id="nebulaGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    
+    <filter id="softLight" x="-50%" y="-50%" width="200%" height="200%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.01" numOctaves="3" seed="5" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="5" xChannelSelector="R" yChannelSelector="G"/>
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+    </filter>
+    
+    <filter id="starGlow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="0.5" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+  
+  <!-- Main nebula shape -->
+  <g transform="translate(50 50)">
+    <circle cx="0" cy="0" r="30" fill="url(#nebulaGradient)" filter="url(#softLight)" opacity="0.9"/>
+    
+    <!-- Nebula tendrils/wisps -->
+    <path d="M-20,15 Q-5,5 5,20 T25,15" stroke="#E056FD" stroke-width="3" fill="none" opacity="0.6" filter="url(#nebulaGlow)"/>
+    <path d="M-15,-20 Q0,-10 15,-25 T20,-10" stroke="#26C6DA" stroke-width="2.5" fill="none" opacity="0.6" filter="url(#nebulaGlow)"/>
+    <path d="M-25,-5 Q-15,10 0,0 T20,-5" stroke="#7B42F6" stroke-width="3" fill="none" opacity="0.6" filter="url(#nebulaGlow)"/>
+    <path d="M-5,25 Q10,15 5,0 T25,10" stroke="#3B89FF" stroke-width="2.5" fill="none" opacity="0.5" filter="url(#nebulaGlow)"/>
+  </g>
+  
+  <!-- Foreground stars - brighter with glow -->
+  <g id="foreground-stars">
+    <circle cx="35" cy="35" r="1" fill="white" filter="url(#starGlow)"/>
+    <circle cx="65" cy="40" r="1.2" fill="white" filter="url(#starGlow)"/>
+    <circle cx="50" cy="25" r="1.4" fill="white" filter="url(#starGlow)"/>
+    <circle cx="75" cy="60" r="1" fill="white" filter="url(#starGlow)"/>
+    <circle cx="30" cy="65" r="1.1" fill="white" filter="url(#starGlow)"/>
+    <circle cx="55" cy="70" r="0.9" fill="white" filter="url(#starGlow)"/>
+  </g>
+  
+  <!-- Bright center star -->
+  <circle cx="50" cy="50" r="1.8" fill="white" filter="url(#starGlow)" opacity="0.9"/>
+</svg>

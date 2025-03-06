@@ -59,42 +59,12 @@ const games = [{
     id: 9,
     title: "Nebula Match",
     description: "Match colorful nebula patterns to create powerful supernovas.",
-    icon: "🌈",
-    url: "games/nebula-match.html"
+    icon: "🌌",
+    url: "games/nebula-match/nebula-match.html"
   }
 ];
 
 // Generate stars for background
-// const createStars = () => {
-//   const starsContainer = document.getElementById('stars');
-//   const numberOfStars = 200;
-
-//   for (let i = 0; i < numberOfStars; i++) {
-//     const star = document.createElement('div');
-//     star.className = 'star';
-
-//     // Random position
-//     const left = Math.random() * 100;
-//     const top = Math.random() * 100;
-
-//     // Random size
-//     const size = Math.random() * 3;
-
-//     // Random animation delay
-//     const delay = Math.random() * 5;
-
-//     star.style.left = `${left}%`;
-//     star.style.top = `${top}%`;
-//     star.style.width = `${size}px`;
-//     star.style.height = `${size}px`;
-//     star.style.animationDelay = `${delay}s`;
-
-//     starsContainer.appendChild(star);
-//   }
-// };
-
-// ADDED
-//
 function createStars(numStars) {
   const body = document.body;
 
@@ -117,13 +87,6 @@ function createStars(numStars) {
     body.appendChild(star);
   }
 }
-
-// Create 200 stars when page loads
-// window.addEventListener('load', () => createStars(200));
-
-// End Added
-//
-
 
 // Create game cards
 const createGameCards = () => {
