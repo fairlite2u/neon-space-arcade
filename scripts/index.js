@@ -1,9 +1,9 @@
 // Game data
 const games = [{
     id: 1,
-    title: "Rock Paper Scissors",
-    description: "Rock beats scissors, scissors beats paper, and paper beats rock. Shoot! ",
-    icon: "👊✋✌️",
+    title: "Space Ro-Sham-Bo",
+    description: "Asteroid crushes Telescope, Cosmic Void captures Asteroid, Telescope cuts Cosmic Void",
+    icon: "☄️🌌🔭",
     url: "games/rock-paper-scissors/rock-paper-scissors.html"
   },
   {

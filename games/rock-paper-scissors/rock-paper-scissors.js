@@ -1,6 +1,6 @@
 // ROCK PAPER SCISSORS
 
-const choices = ["rock", "paper", "scissors"];
+const choices = ["asteroid", "cosmic void", "telescope"];
 const playerDisplay = document.getElementById("playerDisplay");
 const computerDisplay = document.getElementById("computerDisplay");
 const resultDisplay = document.getElementById("resultDisplay");
@@ -20,14 +20,14 @@ function playGame(playerChoice) {
     result = "IT'S A TIE";
   } else {
     switch (playerChoice) {
-      case "rock":
-        result = (computerChoice === "scissors") ? "YOU WIN!" : "YOU LOSE!";
+      case "asteroid":
+        result = (computerChoice === "telescope") ? "YOU WIN!" : "YOU LOSE!";
         break;
-      case "paper":
-        result = (computerChoice === "rock") ? "YOU WIN!" : "YOU LOSE!";
+      case "cosmic void":
+        result = (computerChoice === "asteroid") ? "YOU WIN!" : "YOU LOSE!";
         break;
-      case "scissors":
-        result = (computerChoice === "paper") ? "YOU WIN!" : "YOU LOSE!";
+      case "telescope":
+        result = (computerChoice === "cosmic void") ? "YOU WIN!" : "YOU LOSE!";
         break;
     }
   }
