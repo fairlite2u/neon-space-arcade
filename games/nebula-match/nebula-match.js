@@ -70,6 +70,19 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  //Custom alert box
+  function showAlert(title, message) {
+    // Create a custom alert box
+    const alertBox = document.createElement('div');
+    alertBox.className = 'custom-alert';
+    alertBox.innerHTML = `
+      <h2>${title}</h2>
+      <p>${message}</p>
+      <button onclick="document.body.removeChild(this.parentElement)">OK</button>
+    `;
+    document.body.appendChild(alertBox);
+  }
+
   //check for matches
   function checkForMatch() {
     var cards = document.querySelectorAll('img')
@@ -79,9 +92,9 @@ document.addEventListener('DOMContentLoaded', () => {
     if (optionOneId == optionTwoId) {
       cards[optionOneId].setAttribute('src', 'images/rainbow-nebulas.svg')
       cards[optionTwoId].setAttribute('src', 'images/rainbow-nebulas.svg')
-      alert('You have clicked the same image!')
+      showAlert('Nebula match says', 'You have clicked the same image!')
     } else if (cardsChosen[0] === cardsChosen[1]) {
-      alert('You found a match!')
+      showAlert('Nebula match says', 'You found a match!')
       cards[optionOneId].setAttribute('src', 'images/neon-blue-square.svg')
       cards[optionTwoId].setAttribute('src', 'images/neon-blue-square.svg')
       cards[optionOneId].removeEventListener('click', flipCard)
@@ -90,7 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
       cards[optionOneId].setAttribute('src', 'images/rainbow-nebulas.svg')
       cards[optionTwoId].setAttribute('src', 'images/rainbow-nebulas.svg')
-      alert('Sorry, try again')
+      showAlert('Nebula match says', 'Sorry, try again')
     }
     cardsChosen = []
     cardsChosenId = []

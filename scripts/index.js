@@ -8,18 +8,19 @@ const games = [{
   },
   {
     id: 2,
-    title: "Space Invaders",
-    description: "Defend Earth from alien invaders in this classic arcade game.",
-    icon: "👾",
-    url: "games/space-invaders.html"
+    title: "Nebula Match",
+    description: "Match colorful nebula patterns to create powerful supernovas.",
+    icon: "🌌",
+    url: "games/nebula-match/nebula-match.html"
   },
   {
     id: 3,
-    title: "Galactic Racer",
-    description: "Race through the cosmos at light speed, avoiding obstacles.",
-    icon: "🚀",
-    url: "games/galactic-racer.html"
+    title: "Cosmic Defender",
+    description: "Protect your space station from waves of enemy attacks.",
+    icon: "🛸",
+    url: "games/cosmic defender.html"
   },
+
   {
     id: 4,
     title: "Alien Puzzle",
@@ -29,10 +30,10 @@ const games = [{
   },
   {
     id: 5,
-    title: "Cosmic Defender",
-    description: "Protect your space station from waves of enemy attacks.",
-    icon: "🛸",
-    url: "games/cosmic defender.html"
+    title: "Galactic Racer",
+    description: "Race through the cosmos at light speed, avoiding obstacles.",
+    icon: "🚀",
+    url: "games/galactic-racer.html"
   },
   {
     id: 6,
@@ -57,10 +58,10 @@ const games = [{
   },
   {
     id: 9,
-    title: "Nebula Match",
-    description: "Match colorful nebula patterns to create powerful supernovas.",
-    icon: "🌌",
-    url: "games/nebula-match/nebula-match.html"
+    title: "Space Invaders",
+    description: "Defend Earth from alien invaders in this classic arcade game.",
+    icon: "👾",
+    url: "games/space-invaders.html"
   }
 ];
 
