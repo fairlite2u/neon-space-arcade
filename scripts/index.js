@@ -8,10 +8,10 @@ const games = [{
   },
   {
     id: 2,
-    title: "Nebula Match",
-    description: "Match colorful nebula patterns to create powerful supernovas.",
-    icon: "🌌",
-    url: "games/nebula-match/nebula-match.html"
+    title: "Space Invaders",
+    description: "Defend Earth from alien invaders in this classic arcade game.",
+    icon: "👾",
+    url: "games/space-invaders/space-invaders.html"
   },
   {
     id: 3,
@@ -22,31 +22,31 @@ const games = [{
   },
   {
     id: 4,
+    title: "Nebula Match",
+    description: "Match colorful nebula patterns to create powerful supernovas.",
+    icon: "🌌",
+    url: "games/nebula-match/nebula-match.html"
+  },
+  {
+    id: 5,
     title: "Alien Puzzle -Tetris",
     description: "Solve puzzles to communicate with extraterrestrial beings.",
     icon: "👽",
     url: "games/alien-puzzle.html"
   },
   {
-    id: 5,
+    id: 6,
     title: "Planet Jumper - Doodle Jump",
     description: "Jump from planet to planet collecting cosmic energy.",
     icon: "🪐",
     url: "games/planet-jumper.html"
   },
   {
-    id: 6,
+    id: 7,
     title: "Meteor Shower-Flappy Bird?",
     description: "Dodge falling meteors as you collect valuable space minerals.",
     icon: "☄️",
     url: "games/meteor-shower.html"
-  },
-  {
-    id: 7,
-    title: "Space Invaders",
-    description: "Defend Earth from alien invaders in this classic arcade game.",
-    icon: "👾",
-    url: "games/space-invaders.html"
   },
   {
     id: 8,
