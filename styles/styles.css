@@ -56,7 +56,7 @@ html {
 
 header {
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   text-shadow: 0 0 10px var(--neon-blue), 0 0 20px var(--neon-blue);
 }
 
@@ -72,7 +72,7 @@ h1 {
 }
 
 .randomizer {
-  margin: 1rem auto 3rem;
+  margin: 1rem auto 2rem;
   text-align: center;
 }
 
