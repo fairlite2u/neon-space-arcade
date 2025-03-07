@@ -16,60 +16,60 @@ const games = [{
   {
     id: 3,
     title: "Cosmic Defender",
-    description: "Protect your space station from waves of enemy attacks.",
+    description: "Protect your space station from enemy attacks.",
     icon: "🛸",
     url: "games/cosmic-defender/cosmic-defender.html"
   },
-
   {
     id: 4,
-    title: "Alien Puzzle",
+    title: "Alien Puzzle -Tetris",
     description: "Solve puzzles to communicate with extraterrestrial beings.",
     icon: "👽",
     url: "games/alien-puzzle.html"
   },
   {
     id: 5,
-    title: "Galactic Racer",
-    description: "Race through the cosmos at light speed, avoiding obstacles.",
-    icon: "🚀",
-    url: "games/galactic-racer.html"
-  },
-  {
-    id: 6,
-    title: "Planet Jumper",
+    title: "Planet Jumper - Doodle Jump",
     description: "Jump from planet to planet collecting cosmic energy.",
     icon: "🪐",
     url: "games/planet-jumper.html"
   },
   {
-    id: 7,
-    title: "Starship Builder",
-    description: "Design and test your own starship in interstellar challenges.",
-    icon: "🌌",
-    url: "games/starship-builder.html"
-  },
-  {
-    id: 8,
-    title: "Meteor Shower",
+    id: 6,
+    title: "Meteor Shower-Flappy Bird?",
     description: "Dodge falling meteors as you collect valuable space minerals.",
     icon: "☄️",
     url: "games/meteor-shower.html"
   },
   {
-    id: 9,
+    id: 7,
     title: "Space Invaders",
     description: "Defend Earth from alien invaders in this classic arcade game.",
     icon: "👾",
     url: "games/space-invaders.html"
   },
   {
-    id: 10,
-    title: "Asteroid Blaster",
+    id: 8,
+    title: "Asteroid Blaster = Frogger",
     description: "Blast your way through asteroid fields to reach safety.",
-    icon: "🌠",
+    icon: "🚀",
     url: "games/asteroid-blaster.html"
   }
+  // ,
+  // {
+  //   id: 9,
+  //   title: "Starship Builder",
+  //   description: "Design and test your own starship in interstellar challenges.",
+  //   icon: "🌌",
+  //   url: "games/starship-builder.html"
+  // },
+  // {
+  //   id: 10,
+  //   title: "Galactic Racer",
+  //   description: "Race through the cosmos at light speed, avoiding obstacles.",
+  //   icon: "🚀",
+  //   url: "games/galactic-racer.html"
+  // }
 ];
 
 // Generate stars for background
