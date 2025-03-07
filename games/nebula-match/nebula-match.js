@@ -94,7 +94,6 @@ document.addEventListener('DOMContentLoaded', () => {
       cards[optionTwoId].setAttribute('src', 'images/rainbow-nebulas.svg')
       showAlert('Nebula match says', 'You have clicked the same image!')
     } else if (cardsChosen[0] === cardsChosen[1]) {
-      showAlert('Nebula match says', 'You found a match!')
       cards[optionOneId].setAttribute('src', 'images/neon-blue-square.svg')
       cards[optionTwoId].setAttribute('src', 'images/neon-blue-square.svg')
       cards[optionOneId].removeEventListener('click', flipCard)

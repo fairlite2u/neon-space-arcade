@@ -18,7 +18,7 @@ const games = [{
     title: "Cosmic Defender",
     description: "Protect your space station from waves of enemy attacks.",
     icon: "🛸",
-    url: "games/cosmic defender.html"
+    url: "games/cosmic-defender/cosmic-defender.html"
   },
 
   {
@@ -62,6 +62,13 @@ const games = [{
     description: "Defend Earth from alien invaders in this classic arcade game.",
     icon: "👾",
     url: "games/space-invaders.html"
+  },
+  {
+    id: 10,
+    title: "Asteroid Blaster",
+    description: "Blast your way through asteroid fields to reach safety.",
+    icon: "🌠",
+    url: "games/asteroid-blaster.html"
   }
 ];
 
