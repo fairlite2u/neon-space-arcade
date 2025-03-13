@@ -39,7 +39,7 @@ const games = [{
     title: "Planet Jumper - Doodle Jump",
     description: "Jump from planet to planet collecting cosmic energy.",
     icon: "🪐",
-    url: "games/planet-jumper.html"
+    url: "games/planet-jumper/planet-jumper.html"
   },
   {
     id: 7,
