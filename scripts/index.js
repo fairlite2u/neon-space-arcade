@@ -29,10 +29,10 @@ const games = [{
   },
   {
     id: 5,
-    title: "Alien Puzzle -Tetris",
-    description: "Solve puzzles to communicate with extraterrestrial beings.",
+    title: "Alien Tetris",
+    description: "Clear blocks to communicate with extraterrestrial beings.",
     icon: "👽",
-    url: "games/alien-puzzle.html"
+    url: "games/alien-puzzle/alien-puzzle.html"
   },
   {
     id: 6,
@@ -50,10 +50,10 @@ const games = [{
   },
   {
     id: 8,
-    title: "Asteroid Blaster = Frogger",
+    title: "Asteroid Blaster",
     description: "Blast your way through asteroid fields to reach safety.",
     icon: "🚀",
-    url: "games/asteroid-blaster.html"
+    url: "games/asteroid-blaster/asteroid-blaster.html"
   }
   // ,
   // {

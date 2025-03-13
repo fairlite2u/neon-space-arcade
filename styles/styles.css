@@ -183,7 +183,7 @@ h1 {
   border-radius: 12px;
   width: 90%;
   max-width: 800px;
-  max-height: 90vh;
+  max-height: 100vh;
   overflow-y: auto;
   position: relative;
   border: 2px solid var(--neon-blue);

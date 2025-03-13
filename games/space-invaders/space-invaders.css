@@ -8,6 +8,7 @@ body {
   background-color: #111;
   font-family: Arial, sans-serif;
   overflow: hidden;
+  background-image: url('astrology-background.svg');
 }
 
 canvas {
