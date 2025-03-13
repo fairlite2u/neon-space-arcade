@@ -16,12 +16,15 @@ h3 {
   height: 375px;
   width: 500px;
   align-items: center;
-  padding: 5px 20px;
+  padding: 1px;
+  gap: 1px;
+  background-color: aqua;
 }
 
 img {
-  height: 125px;
-  width: 125px;
+  height: 124px;
+  width: 124px;
+  /* border: aqua solid .5px; */
 }
 
 .container {
