@@ -1,44 +1,189 @@
-.grid {
-  border: 1px solid black;
-  height: 180px;
-  width: 180px;
+body {
+  /* margin: 55px; */
+  padding: 0;
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
+  /* align-items: center; */
+  height: 100vh;
+  background-color: #000;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
 }
 
-.grid div {
-  height: 20px;
-  width: 20px;
+#game-container {
+  position: relative;
+  width: 700px;
+  height: 480px;
+  /* border: 2px solid #5555ff; */
+  box-shadow: 0 0 20px #5555ff;
+  overflow: hidden;
 }
 
-.ending-block {
-  background-color: red;
+#game-canvas {
+  background-color: #000033;
 }
 
-.starting-block {
-  background-color: blue;
+#score-display {
+  position: absolute;
+  top: 55px;
+  left: 10px;
+  color: #fff;
+  font-size: 20px;
+  z-index: 10;
 }
 
-.l1,
-.l2,
-.l3 {
-  background-color: brown;
+#lives-display {
+  position: absolute;
+  top: 55px;
+  right: 10px;
+  color: #fff;
+  font-size: 20px;
+  z-index: 10;
 }
 
-.l4,
-.l5 {
-  background-color: lightblue;
+#game-over {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  z-index: 20;
+  display: none;
 }
 
-.c1 {
-  background-color: black;
+#game-over h1 {
+  color: #ff5555;
+  font-size: 48px;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px #ff0000;
 }
 
-.c2,
-.c3 {
-  background-color: lightgrey;
+#game-over p {
+  font-size: 24px;
+  margin-bottom: 30px;
 }
 
-.frog {
-  background-color: green;
+#restart-button {
+  padding: 15px 30px;
+  background-color: #5555ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#restart-button:hover {
+  background-color: #7777ff;
+}
+
+.star {
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+}
+
+#instructions {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 50, 0.9);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  z-index: 30;
+}
+
+#instructions h1 {
+  color: #5599ff;
+  font-size: 24px;
+  margin-bottom: 15px;
+  text-shadow: 0 0 10px #5555ff;
+}
+
+#instructions .key-container {
+  display: flex;
+  justify-content: center;
+  margin: 5px 0;
+}
+
+#instructions .key {
+  display: inline-block;
+  background-color: #444;
+  border: 2px solid #777;
+  border-radius: 5px;
+  padding: 8px;
+  margin: 0 5px;
+  min-width: 20px;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#instructions p {
+  margin: 5px 0;
+  font-size: 16px;
+  max-width: 550px;
+  text-align: center;
+}
+
+#instructions p.hint {
+  font-size: 16px;
+  color: #aaaaff;
+  margin-top: 10px;
+}
+
+#start-button {
+  margin-top: 10px;
+  padding: 12px 24px;
+  background-color: #5555ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#start-button:hover {
+  background-color: #7777ff;
+}
+
+#victory {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 50, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  z-index: 20;
+  display: none;
+}
+
+#victory h1 {
+  color: #55ff55;
+  font-size: 48px;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px #00ff00;
+}
+
+#victory p {
+  font-size: 24px;
+  margin-bottom: 30px;
 }

@@ -36,7 +36,7 @@ const games = [{
   },
   {
     id: 6,
-    title: "Planet Jumper - Doodle Jump",
+    title: "Planet Jumper",
     description: "Jump from planet to planet collecting cosmic energy.",
     icon: "🪐",
     url: "games/planet-jumper/planet-jumper.html"
@@ -46,7 +46,7 @@ const games = [{
     title: "Meteor Shower-Flappy Bird?",
     description: "Dodge falling meteors as you collect valuable space minerals.",
     icon: "☄️",
-    url: "games/meteor-shower.html"
+    url: "games/meteor-shower/meteor-shower.html"
   },
   {
     id: 8,

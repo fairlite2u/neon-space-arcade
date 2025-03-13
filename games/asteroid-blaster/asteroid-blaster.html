@@ -3,99 +3,54 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Asteroid Blaster</title>
-  <link rel="stylesheet" type="text/css" href="asteroid-blaster.css">
+  <link rel="stylesheet" href="asteroid-blaster.css">
 </head>
 
 <body>
+  <div id="game-container">
+    <canvas id="game-canvas" width="700" height="480"></canvas>
+    <div id="score-display">Score: 0</div>
+    <div id="lives-display">Lives: 3</div>
 
-  <h3>Seconds left: <span id="time-left">20</span></h3>
-  <h3>Result: <span id="result"></span></h3>
+    <div id="instructions">
+      <h1>ASTEROID BLASTER</h1>
+      <p>Navigate your spaceship to all 5 green targets while avoiding or blasting asteroids!</p>
 
-  <button id="start-pause-button">Start/Pause</button>
+      <div class="key-container">
+        <span class="key">↑</span>
+      </div>
+      <div class="key-container">
+        <span class="key">←</span>
+        <span class="key">↓</span>
+        <span class="key">→</span>
+      </div>
+      <p>Use arrow keys to move your spaceship</p>
 
-  <div class="grid">
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div class="ending-block"></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div class="log-left l1"></div>
-    <div class="log-left l2"></div>
-    <div class="log-left l3"></div>
-    <div class="log-left l4"></div>
-    <div class="log-left l5"></div>
-    <div class="log-left l1"></div>
-    <div class="log-left l2"></div>
-    <div class="log-left l3"></div>
-    <div class="log-left l4"></div>
-    <div class="log-right l5"></div>
-    <div class="log-right l1"></div>
-    <div class="log-right l2"></div>
-    <div class="log-right l3"></div>
-    <div class="log-right l4"></div>
-    <div class="log-right l5"></div>
-    <div class="log-right l1"></div>
-    <div class="log-right l2"></div>
-    <div class="log-right l3"></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div class="car-left c1"></div>
-    <div class="car-left c2"></div>
-    <div class="car-left c3"></div>
-    <div class="car-left c1"></div>
-    <div class="car-left c2"></div>
-    <div class="car-left c3"></div>
-    <div class="car-left c1"></div>
-    <div class="car-left c2"></div>
-    <div class="car-left c3"></div>
-    <div class="car-right c1"></div>
-    <div class="car-right c2"></div>
-    <div class="car-right c3"></div>
-    <div class="car-right c1"></div>
-    <div class="car-right c2"></div>
-    <div class="car-right c3"></div>
-    <div class="car-right c1"></div>
-    <div class="car-right c2"></div>
-    <div class="car-right c3"></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div class="starting-block frog"></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
+      <div class="key-container">
+        <span class="key" style="min-width: 80px;">SPACE</span>
+      </div>
+      <p>Press SPACE to shoot lasers and destroy asteroids!</p>
+      <p>The more asteroids you destroy, the higher your score!</p>
+
+      <p class="hint">Touch all 5 green targets at the top of the screen to win!</p>
+      <p class="hint">The blue area at the bottom is a safe zone where asteroids can't hurt you</p>
+
+      <button id="start-button">START GAME</button>
+    </div>
+
+    <div id="game-over">
+      <h1>GAME OVER</h1>
+      <p>Final Score: <span id="final-score">0</span></p>
+      <button id="restart-button">Play Again</button>
+    </div>
+
+    <div id="victory">
+      <h1>VICTORY!</h1>
+      <p>Final Score: <span id="victory-score">0</span></p>
+      <button id="play-again-button">Play Again</button>
+    </div>
   </div>
 
   <script src="asteroid-blaster.js"></script>
