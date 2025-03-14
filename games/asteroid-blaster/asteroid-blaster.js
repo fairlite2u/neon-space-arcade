@@ -266,7 +266,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Draw safe zones at the bottom
   function drawSafeZone() {
-    ctx.fillStyle = 'rgba(85, 215, 255, 0.2)';
+    ctx.fillStyle = 'rgba(85, 85, 255, 0.2)';
     ctx.fillRect(0, game.height - game.safeZoneSize, game.width, game.safeZoneSize);
   }
 

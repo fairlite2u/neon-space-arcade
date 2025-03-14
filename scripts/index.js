@@ -22,10 +22,10 @@ const games = [{
   },
   {
     id: 4,
-    title: "Nebula Match",
-    description: "Match colorful nebula patterns to create powerful supernovas.",
-    icon: "🌌",
-    url: "games/nebula-match/nebula-match.html"
+    title: "Asteroid Blaster",
+    description: "Blast your way through asteroid fields to reach safety.",
+    icon: "🚀",
+    url: "games/asteroid-blaster/asteroid-blaster.html"
   },
   {
     id: 5,
@@ -43,17 +43,17 @@ const games = [{
   },
   {
     id: 7,
-    title: "Meteor Shower-Flappy Bird?",
+    title: "Meteor Shower",
     description: "Dodge falling meteors as you collect valuable space minerals.",
     icon: "☄️",
     url: "games/meteor-shower/meteor-shower.html"
   },
   {
     id: 8,
-    title: "Asteroid Blaster",
-    description: "Blast your way through asteroid fields to reach safety.",
-    icon: "🚀",
-    url: "games/asteroid-blaster/asteroid-blaster.html"
+    title: "Nebula Match",
+    description: "Match colorful nebula patterns to create powerful supernovas.",
+    icon: "🌌",
+    url: "games/nebula-match/nebula-match.html"
   }
   // ,
   // {
